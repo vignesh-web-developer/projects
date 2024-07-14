@@ -214,7 +214,7 @@ header {
 
 .banner {
   position: relative;
-  background-image: url("../res/imgs/Banner.jpg");
+  background-image: url("../imgs/Banner.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
