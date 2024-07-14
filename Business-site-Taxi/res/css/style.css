@@ -1,0 +1,1260 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 16px;
+}
+
+.logo-container,
+.title {
+  /* font-family: "Bungee Spice", sans-serif; */
+  /* font-family: "Righteous", sans-serif; */
+  font-family: "Wallpoet", sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.125rem;
+  font-size: 2.5rem;
+  color: rgb(0, 0, 0);
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ----------Header----------- */
+
+header {
+  width: 100%;
+  height: auto;
+  background-color: black;
+  border-bottom: 1px solid gray;
+  text-transform: uppercase;
+  position: fixed;
+  top: 0;
+  z-index: 5;
+}
+
+.nav-div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 1rem 2rem;
+  justify-content: space-between;
+}
+
+.logo-container {
+  width: 50%;
+}
+
+.header-logo {
+  font-size: 2.5rem;
+  background-image: linear-gradient(276deg, white 30%, rgb(249, 220, 2) 80%);
+  border-radius: 15px;
+  text-align: center;
+  width: fit-content;
+}
+
+.header-logo .taxi-logo {
+  height: 1.65rem;
+  width: 1.65rem;
+}
+
+/* -------Nav Container----------*/
+
+.nav-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-left: 2rem;
+}
+
+.nav-links ul {
+  padding: 0;
+}
+
+.nav-links ul li {
+  display: inline;
+  padding-right: 2rem;
+}
+
+.nav-links ul li a {
+  color: white;
+  font-size: 1rem;
+  text-transform: uppercase;
+  text-align: left;
+  font-weight: normal;
+  /* border-bottom: 2px solid white; */
+}
+
+/* Slid bar settings */
+.nav-container .hideOnLap {
+  display: none;
+}
+
+.side-bar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  padding: 0;
+  z-index: 10;
+  background-color: rgb(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 15px rgba(0, 0, 0, 0.3);
+  list-style: none;
+  display: none;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.nav-div .hide-sidebar {
+  display: none;
+}
+
+.nav-div .show-sidebar {
+  display: flex;
+}
+
+.side-bar li {
+  /* height: 1.5rem; */
+  width: 100%;
+  padding-left: 1rem;
+  padding-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+.side-bar a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: rgb(0, 0, 0);
+  text-shadow: 2px -2px 10px rgb(255, 255, 255), 2px 2px 10px rgb(255, 255, 255),
+    -2px -2px 10px rgb(255, 255, 255), -2px 2px 10px rgb(255, 255, 255);
+
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: left;
+}
+
+.side-bar a:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: black;
+}
+
+@media only screen and (max-width: 640px) {
+  .side-bar {
+    width: 40vw;
+  }
+
+  .side-bar a {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  /* Header */
+  .header-logo {
+    font-size: 2rem;
+  }
+
+  .header-logo .taxi-logo {
+    height: 1.3rem;
+    width: 1.3rem;
+  }
+
+  .nav-links ul li {
+    padding-right: 1.5rem;
+  }
+
+  .nav-links ul li a {
+    font-size: 0.85rem;
+  }
+
+  /* .nav-div .side-bar {
+    display: none;
+  } */
+}
+
+@media only screen and (max-width: 1200px) {
+  .header-logo {
+    font-size: 1.75rem;
+  }
+
+  .header-logo .taxi-logo {
+    height: 1.1rem;
+    width: 1.1rem;
+  }
+}
+/*---------- Side Menu Bar ----------*/
+@media only screen and (max-width: 1024px) {
+  .nav-container .hideOnMobile {
+    display: none;
+  }
+
+  .nav-container {
+    margin-right: 0.5rem;
+  }
+
+  .nav-container .hideOnLap {
+    display: block;
+    padding-right: 0;
+  }
+}
+
+/* ------------ Main Content ------------- */
+
+.main-content {
+  width: 100%;
+}
+
+.banner {
+  position: relative;
+  background-image: url("/Business-site-Taxi/res/imgs/Banner.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 43.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.banner .content {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  width: 35rem;
+}
+
+.banner .content h1 {
+  color: white;
+  font-size: 5rem;
+  font-style: italic;
+  /* display: inline; */
+}
+
+.world {
+  color: rgb(249, 220, 2);
+  text-transform: capitalize;
+}
+
+@media only screen and (max-width: 1650px) {
+  /* Banner Content */
+
+  .banner .content h1 {
+    font-size: 4rem;
+  }
+}
+
+/* -------About ---------- */
+
+#about {
+  margin: 0.5rem 0;
+  width: 100%;
+  background-color: white;
+}
+
+#about .container {
+  width: 60%;
+  margin: 0 auto;
+  padding: 3rem 4rem 2rem 4rem;
+  color: black;
+  text-align: center;
+}
+
+#about .container > h2,
+#why .content h2,
+#achievements h2,
+#reviews > h2 {
+  font-size: 3.5rem;
+}
+
+#about .container > p {
+  font-size: 1.5rem;
+  padding: 1rem 0;
+  font-style: italic;
+  text-align: justify;
+}
+
+#about .since-container {
+  width: 100%;
+  /* margin: 0 auto; */
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.since-container .img-container {
+  width: 100%;
+  /* height: 50rem; */
+  overflow: hidden;
+  margin-right: 2rem;
+}
+
+.since-container img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.since-container .content {
+  width: 100%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.since-container .content h2 {
+  font-size: 3.5rem;
+  padding-bottom: 3rem;
+  line-height: 1;
+}
+
+.since-container .content h3 {
+  font-size: 2rem;
+  padding-bottom: 0.5rem;
+}
+
+.since-container .content p {
+  text-align: justify;
+  font-size: 1.5rem;
+  /* padding-bottom: 2rem; */
+}
+
+.since-container .rider,
+.since-container .driver {
+  padding-left: 2rem;
+  border-left: 5px solid rgb(249, 220, 2);
+  margin-bottom: 2rem;
+}
+
+@media only screen and (max-width: 1750px) {
+  .since-container .content h2 {
+    font-size: 2.75rem;
+    padding-bottom: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 1499px) {
+  #about .container {
+    width: 70%;
+  }
+
+  .since-container .rider > h3,
+  .since-container .driver > h3 {
+    font-size: 1.65rem;
+  }
+
+  .since-container .rider > p,
+  .since-container .driver > p {
+    font-size: 1.4rem;
+  }
+}
+
+@media only screen and (max-width: 1250px) {
+  #about .container {
+    width: 70%;
+  }
+  .since-container .content h2 {
+    font-size: 2.2rem;
+  }
+
+  .since-container .rider > p,
+  .since-container .driver > p {
+    font-size: 1.2rem;
+  }
+
+  .since-container .rider,
+  .since-container .driver {
+    padding-left: 1rem;
+  }
+}
+
+/* Why Us */
+
+#why {
+  width: 100%;
+  margin: 0.5rem auto;
+  padding: 3rem 4rem 2rem 4rem;
+  /* background-color: rgba(212, 214, 214, 0.697); */
+  /* background-color: hsl(180, 2%, 22%); */
+  background-color: rgb(249, 220, 2);
+  text-align: center;
+  color: black;
+}
+
+#why .content h3 {
+  font-size: 2.5rem;
+  font-weight: normal;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2rem 0;
+}
+
+.features .item {
+  width: 20%;
+  margin: 0 0.5rem 2rem 0.5rem;
+  background-color: black;
+  padding: 1rem 1rem 2rem 1rem;
+  color: white;
+}
+
+.features .img-container {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.features .img-container img {
+  width: 100%;
+  flex-basis: 200px;
+  height: 100%;
+  display: block;
+}
+
+.features .item h4 {
+  padding-top: 1rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+@media only screen and (min-width: 1251px) and (max-width: 1550px) {
+  .features .item {
+    min-width: 25%;
+  }
+}
+
+/* --------Achievements------- */
+
+#achievements {
+  width: 100%;
+  margin: 0.5rem auto;
+  padding: 3rem 4rem 2rem 4rem;
+  background-color: rgba(212, 214, 214, 0.697);
+  text-align: center;
+}
+
+#achievements h2 {
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+  text-transform: capitalize;
+}
+
+#achievements .container {
+  width: 60%;
+  height: 40%;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#achievements .container .item {
+  width: 40%;
+  margin: 0 0.5rem 2rem 0.5rem;
+  background-color: black;
+  padding: 1rem 1rem 2rem 1rem;
+  color: whitesmoke;
+}
+
+.cities .img-container,
+.rides .img-container,
+.kilometers .img-container {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.cities .img-container img,
+.rides .img-container img,
+.kilometers .img-container img {
+  width: 100%;
+  flex-basis: 200px;
+  height: 100%;
+  display: block;
+  /* border: 1px solid black; */
+}
+
+#achievements .item .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+#achievements .item .content h3 {
+  font-size: 2.5rem;
+}
+
+#achievements .item .content h4 {
+  font-size: 1.5rem;
+}
+
+#achievements .item .content p {
+  /* width: 85%; */
+  padding-top: 1rem;
+  font-size: 1rem;
+  text-align: center;
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1170px) {
+  /*  Why Us */
+  .features .item {
+    width: calc(33.33% - 1rem);
+  }
+
+  /* <!-- achievements --> */
+
+  #achievements h2 {
+    width: 75%;
+  }
+
+  #achievements .container {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1171px) and (max-width: 1250px) {
+  /*  Why Us */
+  .features .item {
+    min-width: 30%;
+  }
+
+  /* Achivements */
+
+  #achievements h2 {
+    width: 75%;
+  }
+
+  #achievements .container {
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 1251px) and (max-width: 1400px) {
+  /* Achivements */
+
+  #achievements h2 {
+    width: 75%;
+  }
+
+  #achievements .container {
+    width: 85%;
+  }
+
+  #achievements .item .content p {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 1.15rem;
+  }
+}
+
+@media only screen and (min-width: 1401px) and (max-width: 1600px) {
+  /* Achivements */
+
+  #achievements h2 {
+    width: 70%;
+  }
+
+  #achievements .container {
+    width: 70%;
+  }
+}
+/* ----------Reviews----------- */
+
+#reviews {
+  width: 100%;
+  margin: 0 auto;
+  padding: 3rem 4rem 2rem 4rem;
+  background-color: black;
+  color: white;
+  text-align: center;
+  /* border-top: 0.25rem solid white; */
+  border-bottom: 0.5rem solid white;
+}
+
+#reviews > h2 {
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+  /* text-transform: capitalize; */
+}
+
+#reviews .container {
+  width: 100%;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#reviews .customer-review {
+  width: 40%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.customer-review .review {
+  padding: 0 0 2rem 0;
+}
+
+#reviews .review p {
+  font-size: 1.5rem;
+  text-align: justify;
+  font-style: italic;
+  /* font-weight: 300; */
+}
+
+#reviews .cust-images {
+  width: 40%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+
+.cust-images .customer-pic {
+  width: 40%;
+  height: 200px;
+  overflow: hidden;
+  margin-bottom: 0.75rem;
+  border: 0.5rem solid white;
+}
+
+.cust-images .customer-pic img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1350px) {
+  #reviews .container {
+    display: block;
+  }
+
+  #reviews .customer-review {
+    width: 70%;
+  }
+
+  #reviews .cust-images {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .cust-images .customer-pic {
+    width: 30%;
+    padding: 0 0.5rem;
+    border: none;
+  }
+}
+
+@media only screen and (min-width: 1351px) and (max-width: 1600px) {
+  #reviews .container {
+    width: 100%;
+  }
+  #reviews .customer-review {
+    width: 50%;
+  }
+  #reviews .cust-images {
+    width: 50%;
+  }
+}
+
+/* Contact */
+
+#contact {
+  width: 100%;
+  margin: 0 auto;
+  padding: 3rem 4rem 2rem 4rem;
+  border-top: 1px solid rgb(194, 192, 192);
+  border-bottom: 0.5rem solid white;
+
+  /* background-image: url(/Business-site-Taxi/res/imgs/contact-bg3.jpg); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.9;
+  display: flex;
+  justify-content: center;
+  align-items: top;
+  opacity: 0.7;
+}
+
+#contact .title {
+  padding-right: 1rem;
+}
+
+#contact .title h1 {
+  text-transform: uppercase;
+  font-size: 3rem;
+  padding-left: 0.125rem;
+  color: rgb(0, 0, 0);
+  opacity: 1;
+}
+.taxi-logo {
+  filter: drop-shadow(3px 1.5px 1px rgb(255, 255, 255))
+    drop-shadow(-2px -1.5px 1px rgb(255, 255, 255))
+    drop-shadow(-1px 1.5px 1px rgb(255, 255, 255));
+  height: 2rem;
+  width: 2rem;
+}
+
+#contact .icons {
+  margin-left: 0.5rem;
+  text-align: left;
+}
+
+.social-icon {
+  /* box-shadow: 5px 5px 10px rgb(255, 255, 255); */
+  /* background-color: rgba(255, 255, 255, 0.697); */
+  /* text-shadow: 4px 5px 5px rgb(0, 0, 0), -4px -7px 5px rgb(0, 0, 0); */
+  filter: drop-shadow(3px 1.5px 1px rgb(255, 255, 255))
+    drop-shadow(-1px -1.5px 1px rgb(255, 255, 255))
+    drop-shadow(-1px 1.5px 1px rgb(255, 255, 255));
+  border-radius: 4px;
+}
+
+#contact .content {
+  display: flex;
+}
+
+#contact .sub-content {
+  margin-right: 3rem;
+}
+
+.sub-content li {
+  list-style: none;
+  padding: 0.5rem 0;
+}
+
+.sub-content a {
+  color: rgb(0, 0, 0);
+  font-size: 1rem;
+  /* font-weight: bold; */
+  /* text-shadow: 4px 5px 5px rgb(0, 0, 0), -4px -7px 5px rgb(0, 0, 0); */
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1300px) {
+  #contact .title h1 {
+    font-size: 2rem;
+  }
+
+  .taxi-logo {
+    height: 1.2rem;
+    width: 1.2rem;
+  }
+
+  #contact .sub-content {
+    margin-right: 1.5rem;
+  }
+
+  .sub-content a {
+    /* color: rgb(255, 255, 255); */
+    font-size: 0.9rem;
+  }
+
+  /* Footer */
+  footer {
+    font-size: 0.75rem;
+  }
+}
+
+/* --------Footer------------ */
+
+footer {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  font-size: 0.95rem;
+  background-color: #e4e6e9;
+  border-top: 1px solid rgb(194, 192, 192);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  opacity: 0.8;
+}
+
+.terms ul li {
+  display: inline;
+  list-style: none;
+  padding: 1rem;
+}
+
+.terms a {
+  font-weight: light;
+  text-decoration: underline;
+  color: black;
+}
+
+@media only screen and (max-width: 1024px) {
+  /* ----------------Header---------- */
+  .logo-container {
+    width: 70%;
+  }
+
+  /* About Us */
+  #about .container {
+    width: 90%;
+  }
+
+  #about .container > h2 {
+    font-size: 3rem;
+  }
+
+  #about .container p {
+    font-size: 1.25rem;
+    padding: 0.5rem 0;
+  }
+
+  .since-container .rider {
+    margin-bottom: 1rem;
+  }
+
+  #about .since-container .content h2 {
+    font-size: 3rem;
+  }
+
+  #about .since-container .content h3 {
+    font-size: 1.35rem;
+  }
+
+  #about .since-container .content p {
+    font-size: 1rem;
+    padding-bottom: 0;
+  }
+
+  /* ------------Why Us------------- */
+  .features {
+    align-items: stretch;
+  }
+
+  .features .item {
+    width: calc(33.33% - 1rem);
+  }
+
+  .features .img-container {
+    height: 200px;
+  }
+
+  /* -----------Achievements------------- */
+  #achievements h2 {
+    width: 100%;
+    font-size: 2.5rem;
+  }
+
+  #achievements .container {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  #achievements .container .item {
+    min-width: 250px;
+  }
+
+  /*---------------------- Reviews---------------------- */
+
+  #reviews .container {
+    display: block;
+  }
+
+  #reviews .customer-review {
+    width: 90%;
+  }
+
+  #reviews .customer-review p {
+    font-size: 1.25rem;
+  }
+
+  #reviews .cust-images {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .cust-images .customer-pic {
+    width: calc(33.33% - 1rem);
+    height: auto;
+    padding: 0 0.5rem;
+    border: none;
+  }
+
+  /* --------------------Contact--------------- */
+
+  #contact {
+    display: block;
+  }
+  #contact .title {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+
+  #contact .title h1 {
+    margin-right: 1rem;
+    font-size: 2.25rem;
+    opacity: 1;
+  }
+
+  .taxi-logo {
+    /* vertical-align: middle; */
+    height: 1.35rem;
+    width: 1.35rem;
+  }
+
+  .social-icon {
+    vertical-align: middle;
+    padding-bottom: 4px;
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+
+  #contact .content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 80%;
+  }
+
+  #contact ul {
+    padding-left: 0.4rem;
+  }
+
+  #contact .sub-content {
+    margin-right: 1.5rem;
+  }
+
+  #contact .sub-content li {
+    padding: 0;
+  }
+
+  .sub-content a {
+    vertical-align: top;
+    font-size: 0.85rem;
+  }
+
+  /* ------------------Footer------------ */
+
+  .copyright p {
+    font-size: 0.75rem;
+  }
+
+  .terms ul li a {
+    font-size: 0.75rem;
+  }
+}
+
+/* Tab View */
+
+@media only screen and (max-width: 768px) {
+  /* Header */
+
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  .nav-div {
+    /* width: 100vh; */
+    padding-right: 0;
+    padding-left: 1rem;
+  }
+
+  .header-logo {
+    font-size: 0.9rem;
+    padding: 2px;
+  }
+
+  .header-logo .taxi-logo {
+    height: 0.65rem;
+    width: 0.65rem;
+  }
+
+  .side-bar {
+    width: 30vw;
+  }
+
+  /* ------Banner ------ */
+
+  .banner .content {
+    width: 80%;
+  }
+  .banner {
+    max-width: 100%;
+    height: 50vh;
+  }
+
+  .banner .content h1 {
+    font-size: 2.5rem;
+  }
+
+  /* ---------------------About------------------ */
+
+  #about .container {
+    width: 70%;
+    padding: 0;
+  }
+
+  #about .container h2 {
+    font-size: 2rem;
+  }
+
+  #about .container p {
+    font-size: 1rem;
+  }
+
+  .since-container {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .since-container .img-container {
+    max-width: 50%;
+    margin: 0;
+  }
+
+  #about .since-container .content {
+    width: 70%;
+  }
+
+  #about .since-container .content h2 {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+  }
+
+  #about .since-container .content h3 {
+    font-size: 1.25rem;
+  }
+
+  #about .since-container .content p {
+    font-size: 0.85rem;
+  }
+
+  /* -----------------Why Us------------------- */
+  #why {
+    padding: 2rem 0.5rem 0 0.5rem;
+  }
+
+  #why .content h2 {
+    font-size: 2rem;
+  }
+  #why .content h3 {
+    font-size: 1rem;
+  }
+
+  #why .features h4 {
+    padding: 5px 0 0 0;
+    font-size: 0.85rem;
+  }
+
+  .features .item {
+    width: calc(50% - 1rem);
+
+    padding: 5px;
+    background-color: white;
+    color: black;
+  }
+
+  .features .img-container {
+    height: 200px;
+  }
+
+  /* ------------------Achievements------------- */
+  #achievements {
+    padding: 2rem 1rem 2rem 1rem;
+  }
+
+  #achievements h2 {
+    width: 90%;
+    font-size: 2rem;
+  }
+
+  #achievements .container {
+    width: 100%;
+    padding: 2rem 0;
+    /* flex-direction: column; */
+    align-items: stretch;
+    flex-wrap: wrap;
+  }
+
+  #achievements .container .item {
+    min-width: 250px;
+    /* display: flex; */
+  }
+
+  /* ---------- Review ---------------- */
+
+  #reviews > h2 {
+    width: 100%;
+    font-size: 2rem;
+  }
+
+  #reviews .container {
+    display: block;
+  }
+
+  #reviews .customer-review {
+    width: 70%;
+  }
+
+  #reviews .customer-review p {
+    font-size: 1rem;
+  }
+
+  #reviews .cust-images {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .cust-images .customer-pic {
+    width: calc(50% - 1rem);
+    height: auto;
+    padding: 0 0.5rem;
+    border: none;
+  }
+  /* ------Contact--------- */
+
+  #contact .title h1 {
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    opacity: 1;
+  }
+  .taxi-logo {
+    height: 0.8rem;
+    width: 0.8rem;
+  }
+
+  /*-------------Footer---------- */
+  footer {
+    display: block;
+    font-size: 0.65rem;
+  }
+
+  footer .copyright {
+    margin-bottom: 0.2rem;
+  }
+
+  .terms ul {
+    padding: 0;
+  }
+  .terms ul li {
+    padding: 0 0.3rem 0 0;
+  }
+  .terms ul li a {
+    font-size: 0.5rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .logo-container {
+    width: 100%;
+  }
+
+  header .header-logo {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+
+  .nav-links ul li {
+    padding-right: 0.25rem;
+  }
+
+  .side-bar {
+    width: 150px;
+  }
+
+  .banner {
+    height: 30vh;
+  }
+
+  .banner .content {
+    top: 2rem;
+    width: 80%;
+  }
+
+  .banner .content h1 {
+    font-size: 2rem;
+    font-style: normal;
+  }
+
+  .main-content {
+    position: relative;
+    top: 60.8px;
+  }
+
+  #about .container {
+    width: 90%;
+  }
+
+  #about .container > p {
+    font-size: 0.75rem;
+    padding: 0.5rem 0;
+  }
+
+  #about .since-container {
+    padding-top: 0.5rem;
+  }
+
+  #why {
+    padding-top: 2rem;
+  }
+
+  .features .img-container {
+    height: 150px;
+  }
+
+  #achievements {
+    padding: 3rem 1rem 2rem 1rem;
+  }
+
+  #achievements .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  #achievements .container .item {
+    min-width: 250px;
+    /* display: flex; */
+  }
+  #reviews {
+    padding: 2rem 1rem;
+  }
+
+  #reviews .customer-review {
+    width: 90%;
+  }
+
+  #reviews .customer-review p {
+    font-size: 0.75rem;
+  }
+
+  #contact {
+    padding: 2rem 1rem;
+  }
+
+  #contact .title h1 {
+    opacity: 1;
+  }
+
+  .sub-content a {
+    font-size: 0.65rem;
+  }
+}

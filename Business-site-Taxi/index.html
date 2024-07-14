@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Righteous&family=Wallpoet&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="res/css/style.css" />
+    <title>Chennai Taxi</title>
+  </head>
+  <body>
+    <header>
+      <div class="nav-div">
+        <div class="logo-container">
+          <h1 class="header-logo">
+            Chenn<box-icon class="taxi-logo" name="taxi" type="solid"></box-icon
+            >i T<box-icon class="taxi-logo" name="taxi" type="solid"></box-icon
+            >xi
+          </h1>
+        </div>
+
+        <!-- Nav Bar -->
+
+        <ul class="side-bar" class="hideOnLap">
+          <li onclick="hideSidebar()">
+            <box-icon
+              color="white"
+              size="md"
+              name="exit"
+              type="solid"
+            ></box-icon>
+          </li>
+          <li class="closebar">
+            <a href="#about">About</a>
+          </li>
+          <li><a href="#why">Why Us</a></li>
+          <li><a href="#achievements">Achievements</a></li>
+          <li><a href="#reviews">Review</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="nav-container">
+          <!-- Nav Bar -->
+          <div class="nav-links">
+            <ul>
+              <li class="hideOnMobile"><a href="#about">About</a></li>
+              <li class="hideOnMobile"><a href="#why">Why Us</a></li>
+              <li class="hideOnMobile">
+                <a href="#achievements">Achievements</a>
+              </li>
+              <li class="hideOnMobile"><a href="#reviews">Review</a></li>
+              <li class="hideOnMobile"><a href="#contact">Contact</a></li>
+              <li onclick="showSidebar()" class="hideOnLap">
+                <box-icon
+                  class="menu-icon"
+                  color="white"
+                  name="menu-alt-right"
+                ></box-icon>
+              </li>
+            </ul>
+          </div>
+          <!-- <div class="button">
+            <button class="book-taxi hideOnMobile">Book Taxi</button>
+          </div> -->
+        </div>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <div class="banner">
+        <div class="content">
+          <h1>Moving people, and the <span class="world">World!</span></h1>
+        </div>
+      </div>
+      <!-- About -->
+      <div id="about">
+        <div class="container">
+          <h2>About Us</h2>
+          <p>
+            <span class="about-title">ChennaiTaxi</span> is the leading taxi
+            service provider in Chennai, offering reliable and affordable
+            transportation solutions. Our fleet of well-maintained vehicles and
+            professional drivers ensure a comfortable and safe journey for all
+            our customers.
+          </p>
+          <p>
+            We pride ourselves on our punctuality and customer satisfaction.
+            Whether you need a ride to the airport, a city tour, or a daily
+            commute, ChennaiTaxi is here to serve you 24/7.
+          </p>
+
+          <div class="since-container">
+            <div class="img-container">
+              <img src="res/imgs/since.jpg" alt="" />
+            </div>
+            <div class="content">
+              <div>
+                <h2>Making innovations<br />since 2001</h2>
+                <div class="rider">
+                  <h3>For Riders</h3>
+                  <p>
+                    We constantly experiment to come up with industry- first
+                    features for our riders that eventually become a norm.
+                  </p>
+                </div>
+                <div class="driver">
+                  <h3>For Drivers</h3>
+                  <p>
+                    Our drivers get real time stats to help optimize their rides
+                    better and earn more, straight from the app.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Why us -->
+      <div id="why">
+        <div class="content">
+          <h2>Why Us</h2>
+          <h3>There's a ChennaiTaxi ride for everyone 24x7</h3>
+        </div>
+        <!-- Feature -->
+        <div class="features">
+          <div class="availability item">
+            <div class="img-container">
+              <img src="res/imgs/Taxi-247.jpg" alt="" />
+            </div>
+            <h4>24x7 Availability</h4>
+          </div>
+
+          <div class="professional item">
+            <div class="img-container">
+              <img src="res/imgs/Taxi-professional.avif" alt="" />
+            </div>
+            <h4>Expert Drivers</h4>
+          </div>
+
+          <div class="clean-safe item">
+            <div class="img-container">
+              <img src="res/imgs/Taxi-safe.avif" alt="" />
+            </div>
+            <h4>Safe & Hygienic</h4>
+          </div>
+
+          <!-- <div class="pricing item">
+            <div class="img-container">
+              <img src="res/imgs/Taxi-Pricing.jpg" alt="" />
+            </div>
+            <h4>Affordable & Easy</h4>
+          </div> -->
+
+          <div class="economy item">
+            <div class="img-container">
+              <img src="res/imgs/Economy.png" alt="" />
+            </div>
+            <h4>Economy Services</h4>
+          </div>
+
+          <div class="luxury item">
+            <div class="img-container">
+              <img src="res/imgs/Luxury-Taxi.jpg" alt="" />
+            </div>
+            <h4>Luxury Services</h4>
+          </div>
+
+          <div class="suv item">
+            <div class="img-container">
+              <img src="res/imgs/SUV-Taxi.jpg" alt="" />
+            </div>
+            <h4>SUV-Luxury Services</h4>
+          </div>
+          <!--  -->
+        </div>
+        <!--  -->
+      </div>
+
+      <!-- achievements -->
+      <div id="achievements">
+        <h2>Global mobility ecosystem driving communities forward</h2>
+        <div class="container">
+          <!-- cities -->
+          <div class="cities item">
+            <div class="img-container">
+              <img src="res/imgs/Taxi-City-II.webp" alt="" />
+            </div>
+            <div class="content">
+              <h3>250+</h3>
+              <h4>Cities covered</h4>
+              <p>Acress India, Australia, New Zeland and the UK</p>
+            </div>
+          </div>
+          <!-- rides -->
+          <div class="rides item">
+            <div class="img-container">
+              <img src="res/imgs/Taxi-Rides.png" alt="" />
+            </div>
+            <div class="content">
+              <h3>55 Cr+</h3>
+              <h4>Yearly rides</h4>
+              <p>Booked by our customers every year around Global</p>
+            </div>
+          </div>
+          <!-- Kilometers -->
+          <div class="kilometers item">
+            <div class="img-container">
+              <img src="res/imgs/Taxi-Km.jpg" alt="" />
+            </div>
+            <div class="content">
+              <h3>12 Cr+</h3>
+              <h4>Kilometers Covered</h4>
+              <p>ChennaiTaxi's service within a year of launch</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Review  -->
+      <div id="reviews">
+        <h2>Happy Customers</h2>
+        <div class="container">
+          <div class="customer-review">
+            <div class="review">
+              <p>
+                "ChennaiTaxi provided an excellent service during my recent trip
+                to Chennai. The driver was punctual, professional, and very
+                courteous. The car was clean and comfortable, making the journey
+                pleasant and stress-free. I highly recommend ChennaiTaxi for
+                anyone looking for reliable transportation in the city." - Arjun
+                R.
+              </p>
+            </div>
+            <div class="review">
+              <p>
+                "I have used ChennaiTaxi multiple times for both business and
+                personal trips, and they have never disappointed. Their drivers
+                know the city well and always take the best routes to avoid
+                traffic. The booking process is straightforward, and their
+                customer service is top-notch. Great job, ChennaiTaxi!" - Priya
+                S.
+              </p>
+            </div>
+            <div class="review">
+              <p>
+                "I was in Chennai for a family event and needed a reliable taxi
+                service for airport transfers and city tours. ChennaiTaxi
+                exceeded my expectations with their prompt service and friendly
+                drivers. The pricing was also very reasonable compared to other
+                services I looked at. Will definitely use them again!" - Karthik
+                M.
+              </p>
+            </div>
+            <div class="review">
+              <p>
+                "As a frequent traveler, I have tried many taxi services, but
+                ChennaiTaxi stands out for its professionalism and reliability.
+                The cars are always clean, and the drivers are friendly and
+                knowledgeable. I particularly appreciate their 24/7
+                availability, which is a huge plus for my late-night flights." -
+                Meera T.
+              </p>
+            </div>
+            <div class="review">
+              <p>
+                "ChennaiTaxi made my recent business trip to Chennai smooth and
+                hassle-free. Their online booking system is easy to use, and the
+                confirmation was instant. The driver arrived on time and was
+                very helpful with my luggage. I couldn't have asked for a better
+                experience!" - Rajesh K.
+              </p>
+            </div>
+          </div>
+          <div class="cust-images">
+            <div class="customer-pic">
+              <img src="res/imgs/a.webp" alt="happy-customers" />
+            </div>
+            <div class="customer-pic">
+              <img src="res/imgs/b.webp" alt="happy-customers" />
+            </div>
+            <div class="customer-pic">
+              <img src="res/imgs/c.avif" alt="happy-customers" />
+            </div>
+            <div class="customer-pic">
+              <img src="res/imgs/d.webp" alt="happy-customers" />
+            </div>
+            <div class="customer-pic">
+              <img src="res/imgs/e.avif" alt="happy-customers" />
+            </div>
+            <div class="customer-pic">
+              <img src="res/imgs/f.webp" alt="happy-customers" />
+            </div>
+            <div class="customer-pic">
+              <img src="res/imgs/g.webp" alt="happy-customers" />
+            </div>
+            <div class="customer-pic">
+              <img src="res/imgs/h.webp" alt="happy-customers" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- contact -->
+      <div id="contact">
+        <div class="title">
+          <h1>
+            Chenn<box-icon class="taxi-logo" name="taxi" type="solid"></box-icon
+            >i T<box-icon class="taxi-logo" name="taxi" type="solid"></box-icon
+            >xi
+          </h1>
+          <div class="icons">
+            <a href=""
+              ><box-icon
+                class="social-icon"
+                type="logo"
+                name="instagram-alt"
+              ></box-icon
+            ></a>
+
+            <a href="">
+              <box-icon
+                class="social-icon"
+                type="logo"
+                name="youtube"
+              ></box-icon>
+            </a>
+            <a href="">
+              <box-icon
+                class="social-icon"
+                name="twitter"
+                type="logo"
+              ></box-icon>
+            </a>
+          </div>
+        </div>
+
+        <div class="content">
+          <div class="detail-one sub-content">
+            <ul class="section1">
+              <li><a href="">Support</a></li>
+              <li><a href="">Outstation</a></li>
+              <li><a href="">Careers</a></li>
+              <li><a href="">Media Center</a></li>
+              <li><a href="">Corporate</a></li>
+            </ul>
+          </div>
+
+          <div class="detail-two sub-content">
+            <ul class="section2">
+              <li><a href="">Book a Cab</a></li>
+              <li><a href="">Contact Us</a></li>
+              <li><a href="">Drive with us</a></li>
+              <li><a href="">Electric</a></li>
+            </ul>
+          </div>
+
+          <div class="detail-three sub-content">
+            <ul class="section3">
+              <li><a href="">Rental</a></li>
+              <li><a href="">Futurefactory</a></li>
+              <li><a href="">Investor Relations</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <footer>
+        <div class="copyright">
+          <p>Copyright © ChennaiTaxi Pvt Ltd All Rights Reserved</p>
+        </div>
+        <div class="terms">
+          <ul class="terms-section">
+            <li><a href="">Notices</a></li>
+            <li><a href="">Privacy Policy</a></li>
+            <li><a href="">Terms of Service</a></li>
+          </ul>
+        </div>
+      </footer>
+    </main>
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+    <script>
+      function showSidebar() {
+        const sidebars = document.getElementsByClassName("side-bar");
+        if (sidebars.length > 0) {
+          sidebars[0].classList.remove("hide-sidebar");
+          sidebars[0].classList.add("show-sidebar");
+        }
+      }
+
+      function hideSidebar() {
+        const sidebars = document.getElementsByClassName("side-bar");
+        if (sidebars.length > 0) {
+          sidebars[0].classList.remove("show-sidebar");
+          sidebars[0].classList.add("hide-sidebar");
+        }
+      }
+    </script>
+  </body>
+</html>
