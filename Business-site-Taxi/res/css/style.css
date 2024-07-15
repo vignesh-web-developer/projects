@@ -1195,7 +1195,7 @@ footer {
 
   .banner .content h1 {
     font-size: 2rem;
-    font-style: normal;
+    /* font-style: normal; */
   }
 
   .main-content {
