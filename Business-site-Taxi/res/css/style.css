@@ -226,7 +226,7 @@ header {
   position: absolute;
   top: 30%;
   left: 10%;
-  width: 35rem;
+  width: 50%;
 }
 
 .banner .content h1 {
@@ -806,6 +806,10 @@ footer {
   /* ----------------Header---------- */
   .logo-container {
     width: 70%;
+  }
+
+  .banner .content {
+    width: 60%;
   }
 
   /* About Us */
