@@ -849,7 +849,7 @@ footer {
   }
 
   .features .img-container {
-    height: 200px;
+    height: auto;
   }
 
   /* -----------Achievements------------- */
@@ -1064,7 +1064,8 @@ footer {
   }
 
   .features .item {
-    width: calc(50% - 1rem);
+    /* min-width: calc(35%-1rem); */
+    width: calc(40% - 1rem);
 
     padding: 0.75rem;
     /* background-color: white; */
@@ -1072,7 +1073,7 @@ footer {
   }
 
   .features .img-container {
-    height: 200px;
+    height: auto;
   }
 
   /* ------------------Achievements------------- */
@@ -1215,8 +1216,24 @@ footer {
     padding-top: 2rem;
   }
 
+  #why .features h4 {
+    /* padding: 0.7rem 0 0 0; */
+    font-size: 0.8rem;
+  }
+
+  .features .item {
+    /* min-width: calc(35%-1rem); */
+    width: calc(45% - 1rem);
+
+    padding: 0.5rem;
+    /* background-color: white; */
+    /* color: black; */
+  }
+
   .features .img-container {
-    height: 150px;
+    /* min-height: 105px;
+    max-height: 113px; */
+    height: auto;
   }
 
   #achievements {
