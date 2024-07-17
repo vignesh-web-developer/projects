@@ -4,11 +4,11 @@
 }
 html {
   font-size: 16px;
-  color: white;
+  color: black;
 }
 
 .banner {
-  background-image: url(../imgs/Earth-Banner.jpg);
+  /* background-image: url(../imgs/Earth-Banner.jpg); */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -16,19 +16,28 @@ html {
   height: 100vh;
 }
 
-@media only screen and (max-width: 480px) {
-  body {
-    margin: 0;
-    background-image: url(../imgs/EcoTech-MobileBG.jpg);
-    max-width: 100vw;
-    height: 100vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    /* opacity: 0.2; */
+.logo h1 {
+  font-family: "Righteous", sans-serif;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  header {
+  }
+
+  .navbar .logo {
+    width: 100vw;
+    text-align: center;
+    padding-top: clamp(10px, 3vw, 20px);
+    padding-bottom: clamp(10px, 3vw, 20px);
+    background-color: none;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .navcontainer {
+    display: none;
   }
 
   .banner {
-    background-image: none;
+    background-image: url(../imgs/EcoTech-MobileBG.jpg);
   }
 }
