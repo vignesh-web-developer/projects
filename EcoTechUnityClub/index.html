@@ -22,6 +22,10 @@
       href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
 
     <link rel="stylesheet" href="res/css/style.css" />
     <title>EcoTech Unity Club</title>
@@ -78,7 +82,7 @@
                 sustains us, reminds us to cherish and protect our environment.
               </p>
             </div>
-            <div class="pics">
+            <div class="pics" id="slider1">
               <div class="img-container">
                 <img src="res/imgs/heaven-a.jpg" alt="" />
                 <h3 class="kerala">Kerala</h3>
@@ -109,6 +113,27 @@
                 <img src="res/imgs/heaven-i.jpg" alt="" />
               </div>
             </div>
+            <div class="slider-controls">
+              <div class="icon-container left">
+                <box-icon
+                  class="arrow"
+                  color="white"
+                  onclick="slideLeft()"
+                  name="chevron-left"
+                  type="solid"
+                ></box-icon>
+              </div>
+
+              <div class="icon-container right">
+                <box-icon
+                  class="arrow"
+                  color="white"
+                  onclick="slideRight()"
+                  type="solid"
+                  name="chevron-right"
+                ></box-icon>
+              </div>
+            </div>
           </div>
         </div>
         <div id="hell">
@@ -135,7 +160,7 @@
               </p>
             </div>
 
-            <div class="pics">
+            <div class="pics pics2" id="slider2">
               <div class="img-container">
                 <img src="res/imgs/hell-a.jpg" alt="" />
               </div>
@@ -167,6 +192,27 @@
               </div>
               <div class="img-container">
                 <img src="res/imgs/hell-d.webp" alt="" />
+              </div>
+            </div>
+            <div class="slider-controls">
+              <div class="icon-container left">
+                <box-icon
+                  class="arrow"
+                  color="white"
+                  onclick="slideLeft2()"
+                  name="chevron-left"
+                  type="solid"
+                ></box-icon>
+              </div>
+
+              <div class="icon-container right">
+                <box-icon
+                  class="arrow"
+                  color="white"
+                  onclick="slideRight2()"
+                  type="solid"
+                  name="chevron-right"
+                ></box-icon>
               </div>
             </div>
           </div>
@@ -266,7 +312,7 @@
             <form action="/submit-form" method="post">
               <h2>Join Our Club</h2>
               <h3>Become a Hero</h3>
-              <p>You know we're gonna save the world</p>
+              <p>You know we're gonna save the World</p>
               <label for="email">Email:</label>
               <input type="email" id="email" />
               <button>Submit</button>
@@ -277,7 +323,7 @@
       </div>
     </main>
     <footer>
-      <div class="copyright"></div>
+      <div class="copyright">© copyright all right reserved 2024</div>
       <div class="icon-navbar">
         <ul>
           <li>
@@ -295,6 +341,61 @@
         </ul>
       </div>
     </footer>
+    <!-- <script>
+      const container = document.querySelector(".pics");
+      let scrollAmount = 0;
+      const scrollStep = 22; // Width of one image container including padding and gap
+
+      function slideLeft() {
+        if (scrollAmount > 0) {
+          scrollAmount -= scrollStep;
+          container.style.transform = `translateX(-${scrollAmount}vw)`;
+        }
+      }
+
+      function slideRight() {
+        if (
+          scrollAmount <
+          (container.scrollWidth / container.clientWidth) * 100 - scrollStep * 3
+        ) {
+          // Adjust based on the number of images visible
+          scrollAmount += scrollStep;
+          container.style.transform = `translateX(-${scrollAmount}vw)`;
+        }
+      }
+    </script> -->
+    <script>
+      const container = document.querySelector(".pics");
+
+      function slideLeft() {
+        container.scrollBy({
+          left: -1250, // Adjust this value based on your needs
+          behavior: "smooth",
+        });
+      }
+
+      function slideRight() {
+        container.scrollBy({
+          left: 1250, // Adjust this value based on your needs
+          behavior: "smooth",
+        });
+      }
+
+      const conainerTwo = document.querySelector(".pics2");
+      function slideLeft2() {
+        conainerTwo.scrollBy({
+          left: -1250, // Adjust this value based on your needs
+          behavior: "smooth",
+        });
+      }
+
+      function slideRight2() {
+        conainerTwo.scrollBy({
+          left: 1250, // Adjust this value based on your needs
+          behavior: "smooth",
+        });
+      }
+    </script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
   </body>
 </html>
