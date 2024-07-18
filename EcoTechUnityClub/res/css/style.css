@@ -1,43 +1,346 @@
 * {
-  margin: 0;
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
+
 html {
   font-size: 16px;
-  color: black;
+  font-family: "Poppins", sans-serif;
 }
+
+body {
+  background: url("../imgs/Earth-Banner.jpg") no-repeat center/cover;
+  background-attachment: fixed;
+  /* backdrop-filter: blur(1px); */
+}
+/* --------Header ------------- */
+
+header {
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid gray;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+}
+
+.navbar {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  align-items: center;
+  line-height: 2rem;
+  color: white;
+}
+
+.logo {
+  font-family: "Righteous", sans-serif;
+  letter-spacing: 3px;
+}
+
+.navcontainer ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.navcontainer ul li {
+  display: inline;
+  list-style: none;
+  transition: transform 0.3s ease-in-out;
+  /* text-transform: uppercase; */
+}
+
+.nav-item:hover {
+  transform: translateY(-2px) scale(1.25);
+  text-shadow: 2px 2px 10px black, -2px -2px 10px black, 2px -2px 10px black,
+    -2px 2px 10px black;
+}
+
+.navcontainer ul li a {
+  text-decoration: none;
+  color: white;
+  padding-left: 10px;
+}
+
+button {
+  padding: 4px 9px 2px 9px;
+  background-color: white;
+  border-radius: 5px;
+  /* border: 1px solid black; */
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+button:hover {
+  transform: translateY(-2px) scale(1.25);
+  box-shadow: 1px 1px 10px 1px black, -1px -1px 10px 1px black;
+}
+
+/* ----------Banner -------------- */
 
 .banner {
-  /* background-image: url(../imgs/Earth-Banner.jpg); */
+  position: relative;
+  top: 20vh;
+  /* left: 10vw; */
+  /* border: 1px solid white; */
+}
+
+.quote {
+  font-family: "Fredericka the Great", serif;
+  font-size: 3vw;
+  color: rgb(1, 154, 255);
+  text-shadow: 2px 2px 10px rgb(255, 255, 255),
+    -2px -2px 10px rgb(255, 255, 255), 2px -2px 10px rgb(255, 255, 255),
+    -2px 2px 10px rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  text-shadow: 1px 1px 5px rgb(46, 169, 252), -1px -1px 5px rgb(46, 169, 252),
+    1px -1px 5px rgb(46, 169, 252), -1px 1px 5px rgb(46, 169, 252);
+  text-align: center;
+  letter-spacing: 3px;
+  z-index: 5;
+}
+
+/* ----Main Content---------- */
+
+.main-content {
+  position: relative;
+  top: 100vh;
+}
+
+#heaven .container,
+#hell .container {
+  padding-top: 3vw;
+  padding-bottom: 3vw;
+  background-color: rgba(0, 0, 0, 0.329);
+}
+
+#heaven .container .content,
+#hell .container .content {
+  width: 50vw;
+  color: white;
+  margin: 0 auto;
+  margin-bottom: 3vw;
+  padding: 3vw 1.5vw 4vw 1.5vw;
+  text-align: justify;
+  background-color: rgba(0, 0, 0, 0.329);
+  border-radius: 10px;
+}
+
+#heaven h2,
+#hell h2,
+#mission h2 {
+  font-size: 3vw;
+  line-height: 3.5vw;
+}
+
+#heaven p,
+#hell p,
+#mission p {
+  font-size: 1.5vw;
+}
+
+.para1 {
+  padding-top: 3vw;
+  padding-bottom: 3vw;
+}
+
+#heaven .pics,
+#hell .pics {
+  height: 17vw;
+  /* width: 100vw; */
+  padding: 2vw 3.5vw;
+  background-color: rgba(0, 0, 0, 0.329);
+  display: grid;
+  /* grid-template: 28vh / repeat(5, 20vw); */
+  grid-template: 13vw / repeat(5, 20vw);
+  gap: 2vw;
+  grid-auto-flow: column;
+  grid-auto-columns: 20vw;
+  align-items: center;
+  overflow: hidden;
+  /* justify-content: center; */
+}
+
+.pics .img-container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.pics img {
+  max-width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.pics .img-container:hover {
+  transform: translateY(-2px) scale(1.25);
+}
+
+#hell {
+  margin-top: 5vw;
+}
+
+/* -----------Mission--------------- */
+#mission {
+  margin-top: 5vw;
+}
+
+#mission .container {
+  /* height: 100vh; */
+  width: 100vw;
+  padding-top: 3vw;
+  padding-bottom: 3vw;
+  background-color: rgba(0, 0, 0, 0.329);
+  display: grid;
+  grid-template: 50vw /25vw 40vw 25vw;
+  gap: 2vw;
+  justify-content: center;
+}
+
+#mission .img-container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#mission img {
+  max-width: 100%;
+  height: 100%;
+}
+
+#mission .container .content {
+  /* width: 40vw; */
+  height: 50vw;
+  color: white;
+  margin: 0 auto;
+  margin-bottom: 3vw;
+  padding: 2vw 1.5vw 4vw 1.5vw;
+  text-align: justify;
+  background-color: rgba(0, 0, 0, 0.329);
+  border-radius: 10px;
+}
+
+/* #mission .para1 {
+  padding-top: 2vw;
+  padding-bottom: 1vw;
+} */
+
+#mission .para2 {
+  padding: 0 2vw;
+  text-align: center;
+  font-family: "Berkshire Swash", serif;
+  font-size: 1.5vw;
+  letter-spacing: 2.5px;
+  /* font-weight: bold; */
+  padding-bottom: 0.5vw;
+  /* background-image: url("../imgs/quotes-bg.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
+}
+
+/* ------------Events---------- */
+
+#events {
+  margin-top: 5vw;
+}
+
+#events .container {
+  width: 100%;
+  overflow: hidden;
+  /* height: 50vw; */
+  color: white;
+  margin: 0 auto;
+  /* margin-bottom: 3vw; */
+  padding: 2vw 1.5vw;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.329);
+  border-radius: 10px;
+
+  display: grid;
+  grid-template: 10vw / repeat(5, 17vw);
+  gap: 3vw;
+  grid-auto-flow: column;
+  grid-auto-columns: 15vw;
+  align-content: center;
+}
+
+#events .event {
+  background-color: rgba(0, 0, 0, 0.473);
+  transition: transform 0.3s ease-in-out;
+}
+
+#events .event:hover {
+  transform: translateY(-2px) scale(1.25);
+}
+
+.event .content > h3,
+h4,
+h5 {
+  padding-top: 0.5vw;
+  padding-bottom: 0.5vw;
+}
+
+.event .content h3 {
+  font-size: 1.5vw;
+}
+
+.event .content h3 {
+  font-size: 1.2vw;
+}
+
+.event .content h4 {
+  font-size: 1vw;
+}
+
+#join {
+  margin-top: 5vw;
   width: 100vw;
-  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.329);
+  padding: 3vw;
 }
 
-.logo h1 {
-  font-family: "Righteous", sans-serif;
+#join .container {
+  width: 35vw;
+  background-color: rgba(255, 255, 255, 0.637);
+  color: rgb(0, 0, 0);
+  margin: 0 auto;
+  text-align: center;
+  padding: 2vw;
+  border-radius: 15px;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 480px) {
-  header {
-  }
+#join .container h2 {
+  font-size: 3vw;
+  line-height: 3vw;
+  padding-top: 0.5vw;
+}
 
-  .navbar .logo {
-    width: 100vw;
-    text-align: center;
-    padding-top: clamp(10px, 3vw, 20px);
-    padding-bottom: clamp(10px, 3vw, 20px);
-    background-color: none;
-    background-color: rgba(255, 255, 255, 0.1);
-  }
+#join .container h3 {
+  font-size: 2.1vw;
+}
 
-  .navcontainer {
-    display: none;
-  }
+#join .container p {
+  font-size: 1.5vw;
+  padding-bottom: 1vw;
+}
 
-  .banner {
-    background-image: url(../imgs/EcoTech-MobileBG.jpg);
-  }
+label {
+  font-size: 1.5vw;
+}
+
+input {
+  font-size: 1.2vw;
+}
+
+#join button {
+  padding: 0.3vw;
+  font-size: 1vw;
 }
