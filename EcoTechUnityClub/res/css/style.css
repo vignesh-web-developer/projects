@@ -400,3 +400,9 @@ footer {
 .icon-navbar {
   display: none;
 }
+
+@media only screen and (max-width: 480px) {
+  body {
+    background-image: url("../imgs/EcoTech-MobileBG.jpg");
+  }
+}
