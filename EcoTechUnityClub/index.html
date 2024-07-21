@@ -83,7 +83,7 @@
     <main>
       <div class="banner">
         <div class="quote">
-          <h1>Nurture the Nature!</h1>
+          <h1>Nurture <br />the Nature..</h1>
         </div>
       </div>
       <div class="main-content">
@@ -113,15 +113,16 @@
             </div>
             <div class="pics" id="slider1">
               <div class="img-container">
-                <img src="res/imgs/heaven-a.jpg" alt="" />
-                <h3 class="kerala">Kerala</h3>
-              </div>
-              <div class="img-container">
                 <img src="res/imgs/heaven-b.webp" alt="" />
               </div>
-
+              <div class="img-container">
+                <img src="res/imgs/heaven-m.jpg" alt="" />
+              </div>
               <div class="img-container">
                 <img src="res/imgs/heaven-d.jpg" alt="" />
+              </div>
+              <div class="img-container">
+                <img src="res/imgs/heaven-a.jpg" alt="" />
               </div>
               <div class="img-container">
                 <img src="res/imgs/heaven-e.jpg" alt="" />
@@ -132,14 +133,19 @@
               <div class="img-container">
                 <img src="res/imgs/heaven-f.webp" alt="" />
               </div>
+
               <!-- <div class="img-container">
-                <img src="res/imgs/heaven-g.jpg" alt="" />
+                <img src="res/imgs/heaven-h.avif" alt="" />
+              </div> -->
+              <!-- <div class="img-container">
+                <img src="res/imgs/heaven-i.jpg" alt="" />
               </div> -->
               <div class="img-container">
-                <img src="res/imgs/heaven-h.avif" alt="" />
+                <img src="res/imgs/heaven-l.jpg" alt="" />
               </div>
+
               <div class="img-container">
-                <img src="res/imgs/heaven-i.jpg" alt="" />
+                <img src="res/imgs/heaven-n.jpg" alt="" />
               </div>
             </div>
             <div class="slider-controls">
@@ -276,7 +282,10 @@
           </div>
         </div>
         <div id="events">
-          <div class="container">
+          <div class="event-title">
+            <h2>Feature Events</h2>
+          </div>
+          <div class="container event-items">
             <div class="event">
               <div class="content">
                 <h3>Welcome Meet</h3>
@@ -333,6 +342,27 @@
                 <h4>14/09/24 3:00 PM</h4>
                 <h5>Learn Best Practices</h5>
               </div>
+            </div>
+          </div>
+          <div class="slider-controls">
+            <div class="event-icon-container left">
+              <box-icon
+                class="arrow"
+                color="white"
+                onclick="slideLeft3()"
+                name="chevron-left"
+                type="solid"
+              ></box-icon>
+            </div>
+
+            <div class="event-icon-container right">
+              <box-icon
+                class="arrow"
+                color="white"
+                onclick="slideRight3()"
+                type="solid"
+                name="chevron-right"
+              ></box-icon>
             </div>
           </div>
         </div>
@@ -420,6 +450,21 @@
 
       function slideRight2() {
         conainerTwo.scrollBy({
+          left: 1250, // Adjust this value based on your needs
+          behavior: "smooth",
+        });
+      }
+
+      const conainerThree = document.querySelector(".event-items");
+      function slideLeft3() {
+        conainerThree.scrollBy({
+          left: -1250, // Adjust this value based on your needs
+          behavior: "smooth",
+        });
+      }
+
+      function slideRight3() {
+        conainerThree.scrollBy({
           left: 1250, // Adjust this value based on your needs
           behavior: "smooth",
         });
