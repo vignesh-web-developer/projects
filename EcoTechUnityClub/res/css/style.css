@@ -46,6 +46,7 @@ header {
 .logo {
   font-family: "Righteous", sans-serif;
   letter-spacing: 3px;
+  text-shadow: 2px 2px 2px black;
 }
 
 .navcontainer ul {
@@ -106,25 +107,21 @@ button:hover {
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
+  width: 100%;
 }
 
 .quote {
   position: relative;
-  top: 15vh;
-  left: 10vw;
-  font-family: "Righteous", sans-serif;
-  font-size: 3vw;
-  width: fit-content;
-  /* text-shadow: 2px 2px 2px rgb(255, 255, 255), -2px -2px 2px rgb(255, 255, 255),
-    2px -2px 2px rgb(255, 255, 255), -2px 2px 2px rgb(255, 255, 255); */
+  top: 30vh;
+  width: 100%;
+  /* height: 15vw; */
+  font-family: "Great Vibes", cursive;
+  font-size: 5vw;
   color: white;
-  /* text-shadow: 1px 1px 5px rgb(46, 169, 252), -1px -1px 5px rgb(46, 169, 252),
-    1px -1px 5px rgb(46, 169, 252), -1px 1px 5px rgb(46, 169, 252); */
-  text-align: left;
+  text-align: center;
   text-transform: capitalize;
-  letter-spacing: 3px;
   z-index: 5;
-
+  text-shadow: 2px 2px 3px black;
   /* background-color: rgba(0, 0, 0, 0.329); */
 }
 
@@ -442,7 +439,8 @@ footer {
 
 @media only screen and (max-width: 1024px) {
   header {
-    padding: 0.7rem 2rem;
+    padding: 0.5rem 2rem;
+    background-color: black;
   }
 
   .navbar .navcontainer {
@@ -471,21 +469,40 @@ footer {
 
   box-icon {
     vertical-align: middle;
+    color: black;
   }
 
-  .quote {
+  /* .dimand {
+    vertical-align: bottom;
+  } */
+
+  .user-plus {
+    scale: 1.2;
+    /* vertical-align: bottom; */
+  }
+
+  /* .quote {
     text-shadow: 1px 1px 2px rgb(35, 137, 233), -1px -1px 2px rgb(35, 137, 233),
       1px -1px 2px rgb(35, 137, 233), -1px 1px 2px rgb(35, 137, 233);
+  } */
+
+  main {
+    position: relative;
+    top: 2.6rem;
   }
 
-  /* main {
-    position: relative;
-    top: 10rem;
-  } */
+  .banner {
+    height: calc(100vh - 2.6rem);
+  }
 
   #heaven .container .content,
   #hell .container .content {
     width: 70vw;
+  }
+
+  #heaven .pics {
+    height: 20vw;
+    grid-template: 15.1 vw / repeat(5, 23vw);
   }
 
   #heaven .container .content p,
@@ -501,18 +518,26 @@ footer {
     font-size: 1.7vw;
   }
 
-  .slider-controls .icon-container {
-    width: 5vw;
+  #events .event-icon-container {
+    /* height: 25vw; */
+    top: -21vw;
+    /* border: 1px solid white; */
+  }
+
+  #events {
+    padding-bottom: 2rem;
   }
 
   #events .container {
     height: 25vw;
+    grid-template: 17vw / repeat(5, 17vw);
   }
 
   #events .container .event {
-    height: 15vw;
+    height: 17vw;
 
     border-radius: 7px;
+    /* border: 1px solid white; */
   }
 
   #events .container .event h3 {
@@ -528,6 +553,8 @@ footer {
   }
 
   footer {
+    position: relative;
+    top: 2.6rem;
     padding: 1rem;
   }
 }
