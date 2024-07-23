@@ -442,6 +442,10 @@ footer {
   width: 100%;
 }
 
+.footer-icon-navbar ul {
+  display: none;
+}
+
 .icon-navbar {
   display: none;
 }
