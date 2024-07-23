@@ -745,4 +745,8 @@ footer {
     top: 37vh;
     font-size: 8vw;
   }
+
+  .icon-container:hover {
+    scale: 1.5;
+  }
 }
