@@ -249,9 +249,27 @@ button:hover {
   padding-bottom: 3vw;
   background-color: rgba(0, 0, 0, 0.329);
   display: grid;
-  grid-template: 50vw /25vw 40vw 25vw;
+  grid-template: 50vw/25vw 40vw 25vw;
   gap: 2vw;
   justify-content: center;
+  grid-auto-flow: row;
+  grid-auto-rows: 10vw;
+}
+
+.row2-para {
+  grid-area: 2 / span 3;
+  text-align: center;
+  font-family: "Berkshire Swash", serif;
+  background-color: rgba(0, 0, 0, 0.329);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quote-icon {
+  vertical-align: top;
+  padding-bottom: 10px;
 }
 
 #mission .img-container {
@@ -283,17 +301,8 @@ button:hover {
 } */
 
 #mission .para2 {
-  padding: 0 2vw;
-  text-align: center;
-  font-family: "Berkshire Swash", serif;
-  font-size: 1.5vw;
+  font-size: 2.15vw;
   letter-spacing: 2.5px;
-  /* font-weight: bold; */
-  padding-bottom: 0.5vw;
-  /* background-image: url("../imgs/quotes-bg.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; */
 }
 
 /* ------------Events---------- */
@@ -487,6 +496,7 @@ footer {
   } */
 
   main {
+    width: 100%;
     position: relative;
     top: 2.6rem;
   }
@@ -495,33 +505,55 @@ footer {
     height: calc(100vh - 2.6rem);
   }
 
+  .quote {
+    font-size: 6vw;
+  }
+
   #heaven .container .content,
   #hell .container .content {
     width: 70vw;
   }
 
-  #heaven .pics {
+  #heaven .pics,
+  #hell .pics {
     height: 20vw;
-    grid-template: 15.1 vw / repeat(5, 23vw);
+    align-content: center;
+  }
+
+  .left,
+  .right {
+    height: 20vw;
+    width: 4vw;
+  }
+
+  #heaven h2,
+  #hell h2,
+  #mission h2,
+  #events h2 {
+    font-size: 4vw;
+    line-height: 1.2;
   }
 
   #heaven .container .content p,
   #hell .container .content p {
-    font-size: 2vw;
+    font-size: 2.5vw;
   }
 
   #mission .container {
-    grid-template: 50vw /25vw 50vw 25vw;
+    grid-template: 70vw /30vw 40vw 30vw;
+  }
+
+  #mission .container .content {
+    height: 100%;
+    width: 100%;
   }
 
   #mission .container .content p {
-    font-size: 1.7vw;
+    font-size: 2vw;
   }
 
   #events .event-icon-container {
-    /* height: 25vw; */
     top: -21vw;
-    /* border: 1px solid white; */
   }
 
   #events {
@@ -560,10 +592,153 @@ footer {
 }
 
 @media only screen and (max-width: 768px) {
+  .navbar {
+    display: block;
+    text-align: center;
+  }
+  .header-icon-navbar {
+    display: none;
+  }
+
+  #heaven,
+  #hell,
+  #mission,
+  #events {
+    margin-top: 5rem;
+  }
+
+  #heaven .container .content,
+  #hell .container .content {
+    width: 80vw;
+  }
+  #heaven h2,
+  #hell h2,
+  #mission h2,
+  #events h2 {
+    font-size: 5vw;
+    line-height: 1.2;
+  }
+
+  #heaven .container .content p,
+  #hell .container .content p {
+    font-size: 3vw;
+  }
+
+  #mission .img1 {
+    margin-left: 10px;
+  }
+
+  #mission .img2 {
+    display: none;
+  }
+
+  #mission .container {
+    grid-template: 70vw/35vw 60vw;
+  }
+
+  #mission .container .content {
+    margin-left: 10px;
+  }
+
+  #mission .container .content p {
+    font-size: 2.5vw;
+  }
+
+  #mission .para2 {
+    font-size: 2.5vw;
+    width: 70%;
+  }
+
+  #events {
+    padding-bottom: 1rem;
+  }
+
+  #events .container {
+    grid-template: 22vw / repeat(4, 20vw);
+    grid-auto-flow: column;
+    grid-auto-columns: 20vw;
+    align-items: center;
+  }
+
+  #events .event .content h3 {
+    font-size: 2vw;
+  }
+
+  #events .event .content h4 {
+    font-size: 1.7vw;
+  }
+
+  #events .event .content h5 {
+    font-size: 1.4vw;
+  }
+
+  #join {
+    margin-bottom: 7rem;
+  }
+
+  #join .container {
+    width: 50vw;
+  }
+
+  #join .container h2 {
+    font-size: 4vw;
+  }
+
+  #join .container h3 {
+    font-size: 2.7vw;
+  }
+
+  #join .container p {
+    font-size: 2vw;
+  }
+
+  form label {
+    font-size: 2vw;
+  }
+
+  form input {
+    font-size: 1.5vw;
+    margin-right: 15px;
+  }
+
+  form button {
+    scale: 1.5;
+  }
+
+  footer {
+    padding: 0.5rem 0;
+    font-size: 2vw;
+    text-align: center;
+    top: -3rem;
+  }
+
+  .footer-icon-navbar {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    padding: 0.5rem 1rem;
+    background-color: black;
+    border-top: 1px solid gray;
+  }
+
+  .footer-icon-navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+  }
 }
 
 @media only screen and (max-width: 480px) {
   body {
     background-image: url("../imgs/EcoTech-MobileBG.jpg");
+  }
+
+  .banner {
+    background-image: url("../imgs/bannerBG480.jpg");
+  }
+
+  .quote {
+    top: 37vh;
+    font-size: 8vw;
   }
 }
