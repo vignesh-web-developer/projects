@@ -14,6 +14,7 @@ body {
   background: url("../imgs/Earth-Banner.jpg") no-repeat center/cover;
   background-attachment: fixed;
   /* backdrop-filter: blur(1px); */
+  min-width: 320px;
 }
 /* --------Header ------------- */
 
@@ -470,27 +471,46 @@ footer {
 }
 
 /* -------Animation------------ */
-
+#heaven .container .content h2,
+#hell .container .content h2,
+#mission .container .content h2,
 #heaven .container .content p,
 #hell .container .content p,
 #mission .container .img-container,
 #mission .container .content p,
 #mission .container .row2-para,
-#events .container,
-.pics {
-  animation: CSSscrollReveal 2s ease-in-out both;
+#events .event-title {
+  animation: CSSscrollReveal 4s ease-in-out both;
   animation-timeline: view();
-  animation-range: entry 0% cover 50%;
+  animation-range: entry 0% cover 45%;
 }
 
 @keyframes CSSscrollReveal {
   from {
     opacity: 0;
-    transform: translateY(50px);
+    transform: translateY(150px);
   }
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+#events .container,
+.pics {
+  animation: picsAnimi 3s ease-in-out both;
+  animation-timeline: view();
+  animation-range: entry 0% cover 45%;
+}
+
+@keyframes picsAnimi {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
 
@@ -640,7 +660,11 @@ footer {
 }
 
 @media only screen and (max-width: 768px) {
+  header {
+    width: 100vw;
+  }
   .navbar {
+    width: 100%;
     display: block;
     text-align: center;
   }
@@ -834,6 +858,23 @@ footer {
     list-style: none;
     display: flex;
     justify-content: space-evenly;
+  }
+
+  /* ----------Animation Effect---------- */
+  #heaven .container .content h2,
+  #hell .container .content h2,
+  #mission .container .content h2,
+  #heaven .container .content p,
+  #hell .container .content p,
+  #mission .container .img-container,
+  #mission .container .content p,
+  #mission .container .row2-para,
+  #events .container,
+  .pics {
+    animation: picsAnimi 3s ease-in-out both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 45%;
+    overflow: hidden;
   }
 }
 
