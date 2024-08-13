@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: rgb(34, 35, 36);
+  width: 100%;
+  height: 100%;
+  /* position: relative; */
+}
+
+.icon-container {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 25px;
+  align-items: center;
+}
+
+.upMove,
+.upPrime {
+  cursor: pointer;
+}
+
+.icon-container svg {
+  height: 5rem;
+  width: 5rem;
+}
+
+.container {
+  position: absolute;
+  top: 50vh;
+  left: 50vw;
+  height: 300px;
+  width: 300px;
+  perspective: 900px;
+  transform: translate(-50%, -50%);
+}
+
+.cube {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  transform-style: preserve-3d;
+  transform: rotateX(-30deg) rotateY(-45deg) rotateZ(0deg);
+  transition: transform 0.2s ease-out;
+}
+
+.side {
+  position: absolute;
+  transform-style: preserve-3d;
+  /* perspective: 900px; */
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+  /* gap: 4px; */
+  border-radius: 7px;
+  /* background-color: black; */
+  backface-visibility: hidden;
+}
+
+.square {
+  height: 100px;
+  width: 100px;
+  border: 2px solid;
+  /* background-color: black; */
+  border-radius: 7px;
+  text-align: center;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
+.cell {
+  height: 97px;
+  width: 97px;
+  border-radius: 7px;
+  /* border: 2px solid; */
+  backface-visibility: hidden;
+}
+.green {
+  background-color: rgb(16, 143, 16);
+}
+
+.blue {
+  background-color: blue;
+}
+
+.orange {
+  background-color: rgb(255, 136, 0);
+  text-align: center;
+}
+
+.red {
+  background-color: red;
+}
+
+.white {
+  background-color: white;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.front {
+  transform: translateZ(150px);
+}
+
+.back {
+  transform: translateZ(-150px) rotateY(180deg);
+}
+
+.left {
+  right: 150px;
+  transform: rotateY(-90deg);
+}
+
+.right {
+  left: 150px;
+  transform: rotateY(90deg);
+}
+.top {
+  bottom: 150px;
+  transform: rotateX(90deg);
+
+  /* transition: transform 7s ease-in-out; */
+}
+
+.bottom {
+  top: 150px;
+  transform: rotateX(-90deg);
+}

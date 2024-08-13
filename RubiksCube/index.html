@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./res/style.css" />
+    <title>Cube 3x3</title>
+  </head>
+  <body>
+    <div class="toolbar">
+      <div class="icon-container">
+        <div class="360degree">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 -960 960 960"
+            fill="#FFFFFF"
+          >
+            <path
+              d="m360-160-56-56 70-72q-128-17-211-70T80-480q0-83 115.5-141.5T480-680q169 0 284.5 58.5T880-480q0 62-66.5 111T640-296v-82q77-20 118.5-49.5T800-480q0-32-85.5-76T480-600q-149 0-234.5 44T160-480q0 24 51 57.5T356-372l-52-52 56-56 160 160-160 160Z"
+            />
+          </svg>
+        </div>
+        <div class="upMove">
+          <h1 style="color: white">U</h1>
+        </div>
+        <div class="upPrime">
+          <h1 style="color: white">U'</h1>
+        </div>
+        <div class="frontMove">
+          <h1 style="color: white">F</h1>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="cube">
+        <div class="side front">
+          <div class="square bg">
+            <div class="upmove-cell1 green green1 cell"></div>
+          </div>
+          <div class="square bg">
+            <div class="upmove-cell2 green green2 cell"></div>
+          </div>
+          <div class="square bg">
+            <div class="upmove-cell3 green green3 cell"></div>
+          </div>
+          <div class="square bg"><div class="green green4 cell"></div></div>
+          <div class="square bg"><div class="green green5 cell"></div></div>
+          <div class="square bg"><div class="green green6 cell"></div></div>
+          <div class="square bg"><div class="green green7 cell"></div></div>
+          <div class="square bg"><div class="green green8 cell"></div></div>
+          <div class="square bg"><div class="green green9 cell"></div></div>
+        </div>
+        <div class="side back">
+          <div class="square bg">
+            <div class="upmove-cell1 blue blue1 cell"></div>
+          </div>
+          <div class="square bg">
+            <div class="upmove-cell2 blue blue2 cell"></div>
+          </div>
+          <div class="square bg">
+            <div class="upmove-cell3 blue blue3 cell"></div>
+          </div>
+          <div class="square bg"><div class="blue blue4 cell"></div></div>
+          <div class="square bg"><div class="blue blue5 cell"></div></div>
+          <div class="square bg"><div class="blue blue6 cell"></div></div>
+          <div class="square bg"><div class="blue blue7 cell"></div></div>
+          <div class="square bg"><div class="blue blue8 cell"></div></div>
+          <div class="square bg"><div class="blue blue9 cell"></div></div>
+        </div>
+        <div class="side left">
+          <div class="square bg">
+            <div class="upmove-cell1 orange orange1 cell"></div>
+          </div>
+          <div class="square bg">
+            <div class="upmove-cell2 orange orange2 cell"></div>
+          </div>
+          <div class="square bg">
+            <div class="upmove-cell3 frontMove-cell1 orange orange3 cell">
+              3
+            </div>
+          </div>
+          <div class="square bg"><div class="orange orange4 cell"></div></div>
+          <div class="square bg"><div class="orange orange5 cell"></div></div>
+          <div class="square bg">
+            <div class="frontMove-cell2 orange orange6 cell">6</div>
+          </div>
+          <div class="square bg"><div class="orange orange7 cell"></div></div>
+          <div class="square bg"><div class="orange orange8 cell"></div></div>
+          <div class="square bg">
+            <div class="frontMove-cell3 orange orange9 cell">9</div>
+          </div>
+        </div>
+        <div class="side right">
+          <div class="square bg">
+            <div class="upmove-cell1 frontMove-cell1 red red1 cell">1</div>
+          </div>
+          <div class="square bg">
+            <div class="upmove-cell2 red red2 cell"></div>
+          </div>
+          <div class="square bg">
+            <div class="upmove-cell3 red red3 cell"></div>
+          </div>
+          <div class="square bg">
+            <div class="frontMove-cell2 red red4 cell">4</div>
+          </div>
+          <div class="square bg"><div class="red red5 cell"></div></div>
+          <div class="square bg"><div class="red red6 cell"></div></div>
+          <div class="square bg">
+            <div class="frontMove-cell3 red red7 cell">7</div>
+          </div>
+          <div class="square bg"><div class="red red8 cell"></div></div>
+          <div class="square bg"><div class="red red9 cell"></div></div>
+        </div>
+        <div class="side top">
+          <div class="square bg">
+            <div class="white white1 cell">1</div>
+          </div>
+          <div class="square bg">
+            <div class="white white2 cell">2</div>
+          </div>
+          <div class="square bg">
+            <div class="white white3 cell">3</div>
+          </div>
+          <div class="square bg"><div class="white white4 cell">4</div></div>
+          <div class="square bg"><div class="white white5 cell">5</div></div>
+          <div class="square bg"><div class="white white6 cell">6</div></div>
+          <div class="square bg">
+            <div class="frontMove-cell1 white white7 cell">7</div>
+          </div>
+          <div class="square bg">
+            <div class="frontMove-cell2 white white8 cell">8</div>
+          </div>
+          <div class="square bg">
+            <div class="frontMove-cell3 white white9 cell">9</div>
+          </div>
+        </div>
+        <div class="side bottom">
+          <div class="square bg">
+            <div class="frontMove-cell1 yellow yellow1 cell">1</div>
+          </div>
+          <div class="square bg">
+            <div class="frontMove-cell2 yellow yellow2 cell">2</div>
+          </div>
+          <div class="square bg">
+            <div class="frontMove-cell3 yellow yellow3 cell">3</div>
+          </div>
+          <div class="square bg"><div class="yellow yellow4 cell"></div></div>
+          <div class="square bg"><div class="yellow yellow5 cell"></div></div>
+          <div class="square bg"><div class="yellow yellow6 cell"></div></div>
+          <div class="square bg"><div class="yellow yellow7 cell"></div></div>
+          <div class="square bg"><div class="yellow yellow8 cell"></div></div>
+          <div class="square bg"><div class="yellow yellow9 cell"></div></div>
+        </div>
+      </div>
+    </div>
+    <script>
+      //   const cube = document.querySelector(".cube");
+      //   let isMouseDown = false;
+      //   let startX,
+      //     startY,
+      //     currentX = 0,
+      //     currentY = 0;
+
+      //   document.addEventListener("mousedown", (e) => {
+      //     isMouseDown = true;
+      //     startX = e.clientX - currentX;
+      //     startY = e.clientY - currentY;
+      //   });
+
+      //   document.addEventListener("mouseup", () => {
+      //     isMouseDown = false;
+      //   });
+
+      //   document.addEventListener("mousemove", (e) => {
+      //     if (!isMouseDown) return;
+
+      //     currentX = e.clientX - startX;
+      //     currentY = -(e.clientY - startY);
+
+      //     cube.style.transform = `rotateX(${currentY}deg) rotateY(${currentX}deg)`;
+      //   });
+
+      //360degree rotation
+      const cube = document.querySelector(".cube");
+
+      // Initialize with the specified rotation
+      let isMouseDown = false;
+      let startX, startY;
+      let currentX = -135; // Y-axis rotation (from rotateY(50deg))
+      let currentY = -27; // X-axis rotation (from rotateX(0deg))
+      let currentZ = 0; // Z-axis rotation (from rotateZ(-30deg))
+
+      // Apply the initial rotation
+      cube.style.transform = `rotateX(${currentY}deg) rotateY(${currentX}deg) rotateZ(${currentZ}deg)`;
+
+      document.addEventListener("mousedown", (e) => {
+        isMouseDown = true;
+        startX = e.clientX - currentX;
+        startY = e.clientY - currentY;
+      });
+
+      document.addEventListener("mouseup", () => {
+        isMouseDown = false;
+      });
+
+      document.addEventListener("mousemove", (e) => {
+        if (!isMouseDown) return;
+
+        currentX = 135 + (e.clientX - startX); // Invert the X rotation and keep the initial 50deg Y rotation
+        currentY = -27 - (e.clientY - startY); // Invert the Y rotation and keep the initial 0deg X rotation
+
+        cube.style.transform = `rotateX(${currentY}deg) rotateY(${currentX}deg) rotateZ(${currentZ}deg)`;
+      });
+    </script>
+    <script src="./res/script.js"></script>
+  </body>
+</html>
