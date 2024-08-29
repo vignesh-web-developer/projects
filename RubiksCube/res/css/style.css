@@ -22,7 +22,9 @@ body {
 }
 
 .upMove,
-.upPrime {
+.upPrime,
+.frontMove,
+.frontMovePrime {
   cursor: pointer;
 }
 
