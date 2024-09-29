@@ -1,0 +1,76 @@
+.clgContent .buttons .coursesContainer {
+  position: relative;
+}
+
+.clgContent .buttons .coursesContainer > .courseList {
+  position: absolute;
+  top: -270%;
+  right: -160%;
+  height: 15vw;
+
+  overflow: hidden;
+  padding: 15px 3px 15px 5px;
+
+  display: flex;
+}
+
+.coursesContainer > .courseList > .arrow {
+  border-right: 20px solid rgb(0, 0, 0);
+  border-top: 100px solid transparent;
+  border-bottom: 100px solid transparent;
+  transform: translateX(-450%);
+  transition: transform 0.5s ease-in-out;
+}
+
+.coursesContainer > .courseList > ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  /* gap: 1vw; */
+  justify-content: space-around;
+  height: 100%;
+  transform: translateX(-120%);
+  transition: transform 0.5s ease-in-out;
+}
+
+.show {
+  width: 11vw;
+  right: -170%;
+}
+
+.courseList.show > ul,
+.courseList.show > .arrow {
+  transform: translateX(0);
+  transition: transform 0.5s ease-in-out;
+}
+.coursesContainer > .courseList > ul li {
+  width: fit-content;
+}
+.coursesContainer > .courseList > ul li:hover {
+  transform: translateY(-3px) scale(1.05);
+  transition: all 0.3s ease-in-out;
+}
+
+.coursesContainer > .courseList > ul li a {
+  border: 2px solid white;
+  padding: 5px 15px;
+  background-color: black;
+  border-radius: 7px;
+  box-shadow: 2px 2px 7px 4px black;
+}
+
+.coursesContainer > .courseList > ul li a:hover {
+  background-color: white;
+  color: black;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.courseList.show {
+  visibility: visible;
+  transition: visibility 0s linear 0s;
+}
+
+.courseList {
+  visibility: hidden;
+}
