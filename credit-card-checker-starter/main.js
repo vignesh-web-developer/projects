@@ -23,7 +23,7 @@ const mystery5 = [4, 9, 1, 3, 5, 4, 0, 4, 6, 3, 0, 7, 2, 5, 2, 3]
 const batch = [valid1, valid2, valid3, valid4, valid5, invalid1, invalid2, invalid3, invalid4, invalid5, mystery1, mystery2, mystery3, mystery4, mystery5]
 
 
-// Add your functions below:
+// Functions:
 const validateCred = (arr) => {
     let tempArr = [];
     for (let i = arr.length - 1; i >= 0; i--) {
@@ -46,7 +46,6 @@ const validateCred = (arr) => {
     }
   };
   
-  // console.log(validateCred(valid1));
   
   function secondDigit(num) {
     if (num * 2 > 9) {
@@ -64,8 +63,7 @@ const validateCred = (arr) => {
   };
   
   
-  
-  console.log('Invalid Cards: ', findInvalidCards(batch))
+ 
   
   const idInvalidCardCompanies = (arr) => {
     let companyList = [];
@@ -87,7 +85,9 @@ const validateCred = (arr) => {
   
     return invalidCompanyList;
   };
-  
+
+  console.log(validateCred(valid1));
+  console.log('Invalid Cards: ', findInvalidCards(batch));
   console.log('idInvalidCardCompanies : ' + idInvalidCardCompanies(findInvalidCards(batch)));
   
 
