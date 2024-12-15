@@ -24,6 +24,72 @@ const batch = [valid1, valid2, valid3, valid4, valid5, invalid1, invalid2, inval
 
 
 // Add your functions below:
+const validateCred = (arr) => {
+    let tempArr = [];
+    for (let i = arr.length - 1; i >= 0; i--) {
+      if (i % 2 == 1) {
+        tempArr.unshift(arr[i]);
+      } else {
+        let value = secondDigit(arr[i]);
+        tempArr.unshift(value);
+      }
+    }
+    let sum = 0;
+    for (let i = 0; i < tempArr.length; i++) {
+      sum += tempArr[i];
+    }
+  
+    if (sum % 10 == 0) {
+      return true;
+    } else {
+      return false;
+    }
+  };
+  
+  // console.log(validateCred(valid1));
+  
+  function secondDigit(num) {
+    if (num * 2 > 9) {
+      return num * 2 - 9;
+    } else {
+      return num * 2;
+    }
+  }
+  
+  const findInvalidCards = (arr) => {
+    let invalidCards = arr.filter(
+      (nestedArr) => validateCred(nestedArr) == false
+    );
+    return invalidCards;
+  };
+  
+  
+  
+  console.log('Invalid Cards: ', findInvalidCards(batch))
+  
+  const idInvalidCardCompanies = (arr) => {
+    let companyList = [];
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[i][0] == 3) {
+        companyList.push("Amex");
+      } else if (arr[i][0] == 4) {
+        companyList.push("Visa");
+      } else if (arr[i][0] == 5) {
+        companyList.push("Mastercard");
+      } else if (arr[i][0] == 6) {
+        companyList.push("Discover");
+      } else {
+        console.log("Company not found");
+      }
+    }
+  
+    const invalidCompanyList = [...new Set(companyList)];
+  
+    return invalidCompanyList;
+  };
+  
+  console.log('idInvalidCardCompanies : ' + idInvalidCardCompanies(findInvalidCards(batch)));
+  
 
 
 
