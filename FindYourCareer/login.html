@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login/FindYourCareer</title>
+    <link rel="stylesheet" href="res/style/login.css" />
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="login_page">
+      <div class="heading"><h1>FindYourCareer</h1></div>
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="container">
+        <div class="img_container">
+          <div class="img_slide_container">
+            <img src="res/imgs/slide1.JPG" alt="" />
+          </div>
+        </div>
+        <div class="login_container">
+          <div class="form_slide_container">
+            <div class="login_slide">
+              <form action="">
+                <div class="data">
+                  <div class="username textbox">
+                    <i class="material-icons">person</i>
+
+                    <input type="text" name="name" placeholder="User Name" />
+                  </div>
+
+                  <div class="password textbox">
+                    <i class="material-icons">lock</i>
+
+                    <input
+                      type="password"
+                      name="password"
+                      placeholder="Password"
+                    />
+                  </div>
+                </div>
+                <div class="rememeber-user">
+                  <input type="checkbox" id="remember-username" />
+                  <label for="remember-username">Remember User Name</label>
+                </div>
+                <div class="submit">
+                  <button>Login</button>
+                  <div class="error">Username/Password incoorect</div>
+                </div>
+              </form>
+              <div class="nav-link">
+                <div class="reset-password">
+                  <p>Forget Password?</p>
+                </div>
+                <div class="new-user">
+                  <p>New User?</p>
+                </div>
+              </div>
+            </div>
+            <div class="signup_slide">
+              <form action="">
+                <div class="signup-data">
+                  <div class="name-container">
+                    <div class="name textbox">
+                      <i class="material-icons">person</i>
+                      <input type="text" name="name" placeholder="Name" />
+                    </div>
+                  </div>
+
+                  <div class="Email textbox">
+                    <i class="material-icons">mail</i>
+
+                    <input type="text" name="email" placeholder="Email" />
+                  </div>
+                  <div class="Mobile textbox">
+                    <i class="material-icons">phone</i>
+
+                    <input type="tel" name="mobile" placeholder="Mobile" />
+                  </div>
+                  <div class="password textbox">
+                    <i class="material-icons">visibility_off</i>
+
+                    <input
+                      type="password"
+                      name="new-password"
+                      placeholder="New Password"
+                    />
+                  </div>
+                  <div class="confirm-password textbox">
+                    <i class="material-icons">visibility</i>
+
+                    <input
+                      type="text"
+                      name="confirm-password"
+                      placeholder="Confirm Password"
+                    />
+                  </div>
+                </div>
+                <div class="terms-conditions">
+                  <input type="checkbox" id="terms" />
+                  <label for="terms">Agree to terms and conditions</label>
+                </div>
+                <div class="signup-submit">
+                  <button type="submit">Sign Up</button>
+                </div>
+              </form>
+              <div class="already-register" id="login_slide_link">
+                <p>Already Register?<span>Login</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./res/script/script.js"></script>
+  </body>
+</html>

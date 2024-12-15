@@ -1,0 +1,17 @@
+.mainContent > .courseInfo h2 {
+  line-height: 1vw;
+  text-shadow: 5px 5px 5px rgb(0, 0, 0);
+}
+
+.courseInfo h3 {
+  font-size: 2rem;
+  text-shadow: 2px 2px 1px rgb(0, 0, 0);
+}
+
+.mainContent > .courseInfo p {
+  font-size: 1.2vw;
+}
+
+div.clglist > .clgContainer {
+  grid-template: 9vw / 13vw 44vw;
+}

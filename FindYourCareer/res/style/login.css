@@ -1,0 +1,273 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+  background-image: linear-gradient(
+    276deg,
+    rgb(54, 181, 183) 0%,
+    rgb(2, 58, 102) 100%
+  );
+  color: white;
+  transition: smooth;
+}
+
+.login_page {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.heading {
+  position: absolute;
+  width: fit-content;
+  left: 100px;
+  top: 80px;
+  z-index: 10;
+}
+
+.heading h1 {
+  background-color: rgb(29, 44, 49);
+  font-family: "Righteous", sans-serif;
+  text-align: center;
+  font-size: 4rem;
+  padding: 10px 20px;
+}
+
+.line1 {
+  position: absolute;
+  width: 100%;
+  border-bottom: 10px solid white;
+  top: 125px;
+}
+
+.line2 {
+  position: absolute;
+  width: 100%;
+  border-top: 10px solid rgb(29, 44, 49);
+  top: 135px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 70%;
+  margin-top: 100px;
+}
+
+.img_container {
+  display: flex;
+  width: 100%;
+}
+
+.img_slide_container {
+  width: 80%;
+  height: fit-content;
+  margin: auto;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.img_slide_container > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.form_slide_container {
+  width: 50%;
+  height: 100%;
+  margin: 0 auto;
+  color: rgb(93, 97, 98);
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.login_slide,
+.signup_slide {
+  width: 90%;
+  padding: 1.5rem;
+  background-color: white;
+  border-radius: 5px;
+  /* display: flex;
+  flex-direction: column;
+  gap: 1rem; */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+}
+
+.data,
+.signup-data {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+}
+
+.login_slide,
+.signup_slide {
+  position: absolute;
+}
+
+.login_slide {
+  z-index: 1;
+  /* display: none; */
+}
+
+.signup_slide {
+  opacity: 0;
+  transform: scale(0.5);
+}
+
+i {
+  padding-right: 0.7rem;
+}
+
+.textbox > input {
+  border: none;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  width: 125%;
+  height: 100%;
+}
+
+.textbox > input:focus {
+  outline: none;
+}
+
+.textbox {
+  border: 1.5px solid #dadce0;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  height: 2.6rem;
+  padding: 0 1rem;
+  transition: transform 0.2s ease-in-out;
+  /* transition: transform 0.1s ease-in-out; */
+}
+
+.textbox:focus-within {
+  border: 2px solid rgb(0, 186, 248);
+}
+
+.textbox:hover {
+  /* transform: translateY(-2px) scale(1.1); */
+  transform: scale(1.04);
+  border: 2px solid #00c3ff;
+  box-shadow: 1px 1px 8px 2px #2f4650;
+}
+
+.terms-conditions,
+.rememeber-user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#terms,
+#remember-username {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+.signup-submit > button,
+.submit > button {
+  width: 100%;
+  padding: 0.6rem 0;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: rgb(29, 44, 49);
+  color: white;
+  border-radius: 5px;
+  /* transition: transform 0.3s ease-in-out; */
+  transition: transform 0.2s ease-in-out;
+
+  cursor: pointer;
+}
+
+button:hover {
+  /* transform: translateY(-2px) scale(1.1); */
+  border: 2px solid #00c3ff;
+  border-radius: 0.1875rem;
+  box-shadow: 2px 2px 8px 2px #2f4650;
+  transform: scale(1.04);
+}
+
+.error {
+  display: none;
+  text-align: center;
+  padding-top: 3px;
+  font-size: small;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: rgb(233, 123, 123);
+}
+
+.nav-link {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #bdbcbc !important;
+}
+
+.reset-password,
+.new-user {
+  font-size: small;
+  color: rgb(0, 174, 255);
+  letter-spacing: 1.5px;
+  cursor: pointer;
+}
+
+.already-register {
+  letter-spacing: 1.5px;
+  margin-top: 0.5rem;
+  text-align: center;
+  font-size: small;
+}
+
+.already-register > p > span {
+  color: rgb(0, 174, 255);
+  cursor: pointer;
+}
+
+/* Slide Flip */
+.vanish {
+  transform: translateX(-200px) scale(0.5) rotateY(20deg);
+  transition-duration: 1s;
+  opacity: 50%;
+  z-index: 0;
+}
+
+.vanishMove {
+  opacity: 0;
+  transition-duration: 0.7s;
+  transform: translate(0) scale(0.5);
+}
+
+.visible {
+  opacity: 75%;
+  transition-duration: 1s;
+
+  transform: translateX(165px) scale(0.7) rotateY(20deg);
+}
+
+.visibleMove {
+  opacity: 100%;
+  transition-duration: 1s;
+  transform: scale(1) translateX(0);
+  z-index: 1;
+}
