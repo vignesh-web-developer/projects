@@ -126,3 +126,5 @@ const mostRelated = (arr) => {
 
 // Find the two most related specimens from the list
 mostRelated(pAequorList);
+
+// ****** Completed Extra Task*******
