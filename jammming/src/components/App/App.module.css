@@ -1,0 +1,12 @@
+.main {
+    background-color: rgb(44, 44, 44);
+    margin: 0;
+    height: fit-content;
+    box-sizing: border-box;
+}
+
+.title {
+    margin: 0;
+    padding: 25px 0;
+    text-align: center;
+}
