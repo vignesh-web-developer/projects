@@ -1,12 +1,49 @@
 .main {
-    background-color: rgb(44, 44, 44);
+    /* background-color: rgb(34, 34, 34); */
     margin: 0;
     height: fit-content;
     box-sizing: border-box;
+    /* border-bottom: 1px solid white; */
+    padding: 25px 0;
 }
 
 .title {
     margin: 0;
-    padding: 25px 0;
+    padding-bottom: 25px;
     text-align: center;
+    letter-spacing: 2px;
+    font-size: 100px;
+    font-weight: 100;
+    font-family: "Lavishly Yours", serif;
+    color: white;
+}
+
+
+
+/* .j{
+    color:  rgb(248, 67, 154);
+}
+
+.a{
+    color: snow;
+}
+
+.m{
+    color: rgb(0, 157, 255);
+}
+
+.i {
+    color: rgb(251, 53, 53);
+}
+
+.n{
+    color: gold;
+}
+
+.g{
+    color: green;
+} */
+
+.searchBarContainer{
+    overflow: hidden;
 }

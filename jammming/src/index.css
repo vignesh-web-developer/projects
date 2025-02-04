@@ -9,6 +9,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: url("../public/BG.jpg") no-repeat center/cover;
+  background-attachment: fixed;
   box-sizing: border-box;
 }
 

@@ -3,4 +3,10 @@
     background-color: transparent;
     font-size: larger;
     display: flex;
+    color: white;
+    cursor: pointer;
+}
+
+.icon:hover {
+    transform: scale(1.2);
 }

@@ -1,0 +1,47 @@
+.tracklist {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    border-radius: 7px;
+    padding: 0 25px;
+    width: 95%;
+    margin: 0 auto;
+    overflow-y: scroll;
+}
+
+.listItem {
+    height: 45px;
+   
+    display: flex;
+    align-items: center;
+   
+    color: white;
+    
+}
+
+/* Width and background of the scrollbar track */
+::-webkit-scrollbar {
+    width: 4px; /* Adjust width */
+    height: 4px; /* For horizontal scrollbars */
+  }
+  
+  /* Scrollbar track */
+  ::-webkit-scrollbar-track {
+    background: #888; 
+    display: none;
+    border-radius: 6px;
+  }
+  
+  /* Scrollbar thumb (the draggable part) */
+  ::-webkit-scrollbar-thumb {
+    background: #f1f1f1; 
+
+    border-radius: 10px;
+  }
+  
+  /* On hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  
