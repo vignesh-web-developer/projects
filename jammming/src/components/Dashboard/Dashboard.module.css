@@ -6,7 +6,7 @@
     gap: 50px;
 }
 
-.resultContainer, .playlistContainer {
+.resultContainer {
     width: 40%;
     height: 58vh;
     border-radius: 10px;

@@ -23,32 +23,24 @@
     border-bottom: 2px solid rgba(255, 255, 255, 0.10);
 }
 
-.playlistNameInput {
+.tabs {
     margin: 0 auto;
+    width: 100%;
+    /* overflow: scroll; */
+}
+
+.navButton {
     display: flex;
     gap: 20px;
-    height: 35px;
-    color: white;
+    margin-bottom: 20px;
+    justify-content: center;
 }
 
-.playlistNameInput > input {
-    border: none;
-    background-color: transparent;
-    height: 100%;
-    color: white;
-    outline: none;
-    font-size: 15px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.532);
-}
-
-.playlist {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
-    border-radius: 7px;
-    padding: 0 25px;
-    width: 95%;
-    margin: 0 auto;
-    overflow-y: scroll;
+.button {
+    border: 1px solid white;
+    background-color: aliceblue;
+    color: black;
+    padding: 3px 7px;
+    font-size:large;
+    cursor: pointer;
 }

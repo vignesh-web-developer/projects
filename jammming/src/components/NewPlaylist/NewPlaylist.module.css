@@ -1,0 +1,64 @@
+.newlistContainer {
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+
+.playlistNameInput {
+    margin: 0 auto;
+    display: flex;
+    gap: 20px;
+    height: 35px;
+    color: white;
+    justify-content: center;
+}
+
+.playlistNameInput > input {
+    border: none;
+    background-color: transparent;
+    height: 100%;
+    color: white;
+    outline: none;
+    font-size: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.532);
+}
+
+.playlist {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    border-radius: 7px;
+    padding: 0 25px;
+    width: 95%;
+    margin: 0 auto;
+    overflow-y: scroll;
+   border: 1px solid wheat;
+
+}
+
+/* Width and background of the scrollbar track */
+.playlist::-webkit-scrollbar {
+    width: 4px; /* Adjust width */
+    height: 4px; /* For horizontal scrollbars */
+  }
+  
+  /* Scrollbar track */
+  .playlist::-webkit-scrollbar-track {
+    background: #888; 
+    /* display: none; */
+    border-radius: 6px;
+  }
+  
+  /* Scrollbar thumb (the draggable part) */
+  .playlist::-webkit-scrollbar-thumb {
+    background: #f1f1f1; 
+
+    border-radius: 10px;
+  }
+  
+  /* On hover */
+  .playlist::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }

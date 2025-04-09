@@ -8,6 +8,8 @@
     width: 95%;
     margin: 0 auto;
     overflow-y: scroll;
+   border: 1px solid wheat;
+
 }
 
 .listItem {
