@@ -1,0 +1,102 @@
+.banner{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+}
+
+.banner > .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0 0px 0px 85px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container > .content {
+    font-family: 'Poppins', sans-serif;
+    font-size: 29px;
+    line-height: 1;
+    text-shadow: 2px 1px 1px rgb(255, 255, 255);
+    height: fit-content;
+    text-wrap: wrap;
+}
+
+.content .comapre_text {
+    color: #0679ff;
+}
+
+
+
+.container > .searchbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px 10px;
+    border: 2px solid #8f28f0;
+    border-radius: 25px;
+    box-shadow: 1px 1px 5px #298bfa;
+    width: 80%;
+    background-color: white;
+    height: 50px;
+}
+
+.searchbar > input {
+    all: unset;
+    box-sizing: border-box;
+    font-size: x-large;
+    width: 100%;
+}
+
+.searchIcon {
+    color: #585b5c;
+    font-size: 30px;
+}
+
+.products_container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    row-gap: 1rem;
+   padding-bottom: 100px;
+}
+
+.products {
+    width: fit-content;
+    min-width: 11rem;
+    height: 3.2rem;
+    padding: 0 15px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: x-large;
+    font-weight: bold;
+    color: white;
+    
+    background: linear-gradient(to right, #298bfa, #8f28f0);
+    cursor: pointer;
+
+}
+
+.img_container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+.img_container > img {
+    width: 100%;
+  height: 100%;
+  display: block;
+  position: relative;
+  z-index: 1;
+  transform: scale(1.3);
+}
+

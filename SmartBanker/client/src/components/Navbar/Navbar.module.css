@@ -1,0 +1,42 @@
+.navbar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 10px;
+    border-bottom: 1px solid #4d4d4d;
+    background-color: #221e1e;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar > img {
+    background-color: whitesmoke;
+    border-radius: 5px;
+}
+
+
+.navlist {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+.navlist > .products, .navlist > .services {
+    font-size: x-large;
+}
+
+.navlist > button {
+    font-size: x-large;
+    border: none;
+    outline: none;
+    appearance: none;
+    border-radius: 21px;
+    padding: 5px 20px;
+    background-color: #0679ff;
+    color: whitesmoke;
+}

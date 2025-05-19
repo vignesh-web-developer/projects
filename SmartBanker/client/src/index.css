@@ -1,0 +1,42 @@
+:root {
+  font-size: 16px;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scrollbar-width: none; /* Firefox */
+}
+
+*::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+html, body {
+  width: 100vw;
+  overflow: auto;
+  background-color: whitesmoke;
+  background-image: url('./assets/background3.png');
+  background-attachment: fixed;
+  background-size: cover;
+  }
+
+
+/* .accounts_page{
+  background-image: url(./assets/moneyPlant.jpg);
+  background-attachment: fixed;
+  background-size: contain;
+} */
+
+
+/* .moneyPlant{
+  background-image: url(./assets/moneyPlant.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: fit-content;
+  
+} */
+

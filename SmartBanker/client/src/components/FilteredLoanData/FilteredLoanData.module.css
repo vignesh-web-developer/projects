@@ -1,0 +1,82 @@
+.filteredloanData {
+    margin: auto 7vw;
+    font-family: 'Poppins', sans-serif;
+}
+
+.loanSummary {
+    width: 60%;
+    background-color: white;
+    border-radius: 15px;
+    padding: 7px 25px;
+}
+
+.loanSummary h1{
+    font-size: 40px;
+    text-transform: capitalize;
+}
+
+.loanSummary > .description {
+    font-size: 20px;
+    
+    text-align: justify;
+}
+
+.filteredLoanDetails{
+    width: fit-content;
+    max-width: 80vw;
+    display: flex;
+    margin: 3rem auto;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow-x: scroll;
+}
+
+.detailsColumn{
+    font-size: 1.15rem;
+    margin-left: 3.5px;
+}
+
+
+.rowHeader{
+    min-width: 12rem;
+    padding: 0 5px;
+    height: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    background-color: #298bfa;
+    margin: 7px 3.5px;
+    color: white;
+    border: 2px solid rgb(0, 148, 247);
+}
+
+.dataContainer{
+    display: flex;
+    margin-right: 3.5px;
+}
+
+
+.data {
+    width: 10.5rem;
+    height: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    text-align: center;
+    background-color: #d8e3f0;
+    margin: 7px 3.5px;
+}
+
+.dataHeader{
+    background-color: #298bfa;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
